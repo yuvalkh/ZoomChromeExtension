@@ -5,10 +5,26 @@
     <script src="popup.js"></script>
   </head>
   <body>
-    <div>
-      speed between 0 and 16: <input id="speed" type=number step=0.01 /><br/>
-      jump every time: <input id="jump" type=number step=any /> <br/>
-      <button id="sendButton">Click me</button>
+    <div id="on_site" style="display: none; width: 300px; height: 180px;">
+      <table>
+        <tr>
+          <td> speed: </td>
+          <td> <input id="speed" type=number step=0.1 /> </td>
+        </tr>
+        <tr>
+          <td> jump skip: </td>
+          <td> <input id="jump" type=number step=any /> </td>
+        </tr>
+      </table>
+      <button id="sendButton">Set</button> <br/>
+      Note - focus needs to be on video in order to work<br/>
+      Controls: <br />
+      Right/Left Arrow to go forward/backward<br />
+      Up/Down Arrow to increase/decrease volume<br />
+      Shift + Up/Down Arrow to increase/decrease speed
+    </div>
+    <div id="not_on_site" style="width: 100px;">
+      Currently you're not in Zoom recorded video site
     </div>
   </body>
 </html>
